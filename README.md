@@ -23,7 +23,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 - Gather: gather input on a Transfer call
 - Gather_TTS: this enable you to play voice text to an outgoing call and gather input key follows by the voice [Mainly for IVR]
 - TTS: Play voice text to an outgoing call with no gather input, suitable for IVR and performs equally the same function as Gather_TTS but gather not allowed on this
-- check_balance: this enable you to check your api balance
+- balance: this enable you to check your api balance
 
 
 ## API Reference
@@ -54,7 +54,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 | `from` | `string` | **Required**. Your Caller ID E.G [14563805355] |
 | `uuid` | `string` | **Required**. Your call uuid you intend transfering the call to |
 
-#### add(num1, num2)
+
 #### Hanging up an existing Call
 
 ```http
@@ -123,6 +123,13 @@ This documentation focused mainly on python as a framework using our endpoint, w
 | `text` | `string` | **Required**. Your Text E.g Hi, we are texis voice Api company |
 
 
+#### Check your API Balance.
+```http
+  POST /vi/balance 
+```
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `apikey` | `string` | **Required**. Your API key |
 
 
 
