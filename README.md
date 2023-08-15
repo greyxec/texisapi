@@ -45,7 +45,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 #### Transfer to an existing call
 
 ```http
-  POST /vi/transfer
+  POST /v1/transfer
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -58,7 +58,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 #### Hanging up an existing Call
 
 ```http
-  POST /vi/hangup
+  POST /v1/hangup
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -68,7 +68,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 
 #### Play Hold Music on Existing Call
 ```http
-  POST /vi/hold
+  POST /v1/hold
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -79,7 +79,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 
 #### Stop Hold Music 
 ```http
-  POST /vi/unhold
+  POST /v1/unhold
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -88,7 +88,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 
 #### To gather DTMF Input On a transferred Call.
 ```http
-  POST /vi/gather 
+  POST /v1/gather 
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -99,7 +99,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 
 #### To gather DTMF Input and Play voice tts text on Call.
 ```http
-  POST /vi/gather_tts 
+  POST /v1/gather_tts 
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -113,7 +113,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 
 #### Play voice tts text on Call.
 ```http
-  POST /vi/tts 
+  POST /v1/tts 
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -125,7 +125,7 @@ This documentation focused mainly on python as a framework using our endpoint, w
 
 #### Check your API Balance.
 ```http
-  POST /vi/balance 
+  POST /v1/balance 
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
