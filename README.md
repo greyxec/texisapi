@@ -321,6 +321,20 @@ bot.send_audio(chat_id=userid, audio=open(f"recs/{recording_url}.wav", 'rb'))
 
 ```
 
+## HOW TO ENABLE VOICEMAIL DETECTION ON YOUR CALL
+
+Add voicemail:: 'yes' data parameter to your v1/call endpoint to enabled voicemail. Code Sample 😉
+```python
+data = {
+        "apikey": API_KEY,
+        "to": "771xxxxxxxxxx",
+        "from": "1xxxxxxxxxx",
+        "callback": "callback/url",
+        "voicemail": "yes",
+
+    }
+
+```
 
 ## API Event and Response
 ## Event And CallBack
